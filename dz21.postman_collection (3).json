@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "554be627-8165-4b54-97f8-78ae32cfcf18",
+		"name": "dz21",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29597029",
+		"_collection_link": "https://cloudy-water-547750.postman.co/workspace/New-Team-Workspace~fad41053-25da-4fa3-9970-81abf1bdffb9/collection/29597029-554be627-8165-4b54-97f8-78ae32cfcf18?action=share&source=collection_link&creator=29597029"
+	},
+	"item": [
+		{
+			"name": "https://qauto.forstudy.space/api/auth/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Valid\",\r\n  \"lastName\": \"Valida\",\r\n  \"email\": \"valid.valida@gmail.com\",\r\n  \"password\": \"Qwerty12345\",\r\n  \"repeatPassword\": \"Qwerty12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://qauto.forstudy.space/api/auth/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "https://qauto.forstudy.space/api/auth/signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"valid.valida@gmail.com\",\r\n  \"password\": \"Qwerty12345\",\r\n  \"remember\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://qauto.forstudy.space/api/auth/signin"
+			},
+			"response": []
+		},
+		{
+			"name": "https://qauto.forstudy.space/api/users/profile",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"photo\": \"user-1621352948859.jpg\",\r\n  \"name\": \"Ann\",\r\n  \"lastName\": \"Petrenko\",\r\n  \"dateBirth\": \"2021-03-17T15:21:05.000Z\",\r\n  \"country\": \"Ukraine\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://qauto.forstudy.space/api/users/profile"
+			},
+			"response": []
+		},
+		{
+			"name": "https://qauto.forstudy.space/api/cars",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"carBrandId\": 4,\r\n  \"carModelId\": 16,\r\n  \"mileage\": 122\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://qauto.forstudy.space/api/cars"
+			},
+			"response": []
+		},
+		{
+			"name": "https://qauto.forstudy.space/api/expenses",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"carId\": 54429,\r\n  \"reportedAt\": \"2023-09-10T15:14:37.678Z\",\r\n  \"mileage\": 150,\r\n  \"liters\": 11,\r\n  \"totalCost\": 11,\r\n  \"forceMileage\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://qauto.forstudy.space/api/expenses"
+			},
+			"response": []
+		}
+	]
+}
